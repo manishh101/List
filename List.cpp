@@ -25,7 +25,8 @@ int Beginning(){
 
 void Insert(int key,int pos){
   int t = key,i = 0;
-  if(pos<=0 || pos>(Length()+1)) cout<<"enter correct position";
+  if(pos<=0 ) cout<<"enter correct position";
+    else if(pos>Length()+1) cout<<"List is full";
   else if(pos==1){
     for(int i = Length();i>pos-1;i--){
       p[i] = p[i-1];
